@@ -15,7 +15,7 @@ export default function Home() {
   const router = useRouter();
 
   const onClick = () => {
-    const link = `https://${baseUrl}/s?k=${search}&s=review-count-rank&tag=msortbyreview-21&ref=as_li_ss_tl&rh=n%3A12950651%2Cp_72%3A184746031`;
+    const link = `https://${baseUrl}/s?k=${search}&s=review-count-rank&tag=msortbyreview-21`;
     router.push(link);
   };
 
