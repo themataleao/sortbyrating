@@ -65,7 +65,7 @@ export default function Home() {
       </div>
       <footer>
         <p>
-          Created by <Link href="https://willhausmarc.xyz">Marc Willhaus</Link>
+          Created with 🫕 by <Link href="https://willhausmarc.xyz">MW</Link>
         </p>
       </footer>
     </main>
