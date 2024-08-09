@@ -61,6 +61,15 @@ export default function Home() {
             "cookbooks",
           ]}
         ></PlaceholdersAndVanishInput>
+        <div className="font-semibold text-sm">
+          After opening the page select
+        </div>
+        <Image
+          src="/plus_four_customer_reviews.png"
+          width={150}
+          height={150}
+          alt="4star+ rating"
+        ></Image>
         <div className="flex flex-col"></div>
       </div>
       <footer>
