@@ -10,12 +10,12 @@ import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-van
 import Link from "next/link";
 
 export default function Home() {
-  const [baseUrl, setBaseUrl] = useState("amazon.de");
+  const [baseUrl, setBaseUrl] = useState("amazon.com");
   const [search, setSearch] = useState("");
   const router = useRouter();
 
   const onClick = () => {
-    const link = `https://${baseUrl}/s?k=${search}&s=review-count-rank&tag=msortbyreview-21`;
+    const link = `https://${baseUrl}/s?k=${search}&s=review-count-rank&tag=sortbyrating-20`;
     router.push(link);
   };
 

@@ -3,7 +3,6 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
-import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -11,8 +10,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Sort Amazon Website by Ranking",
-  description: "Sort your Amazon list by ranking",
+  title: "Sort Amazon Website by Ratings",
+  description: "Sort your Amazon list by Ratings",
 };
 
 export default function RootLayout({
