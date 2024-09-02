@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { Analytics } from "@vercel/analytics/react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -21,13 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <TailwindIndicator />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
+        <TailwindIndicator />
+        <Analytics />
         {children}
       </body>
     </html>

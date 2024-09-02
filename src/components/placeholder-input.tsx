@@ -5,10 +5,9 @@ import { useRouter } from "next/navigation";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
-import Link from "next/link";
 
-export default function Home() {
-  const [baseUrl, setBaseUrl] = useState("");
+export default function PlaceholderInput() {
+  const [baseUrl, setBaseUrl] = useState("amazon.com");
   const [search, setSearch] = useState("");
   const router = useRouter();
 
@@ -18,15 +17,13 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col justify-between items-center px-4 py-4 md:px-16">
-      <header className=""></header>
+    <div className="flex min-h-screen flex-col justify-between items-center px-4 py-4 md:px-16">
       <div className="w-full flex flex-col justify-center items-center gap-2 max-w-96">
-        <Image src="/logo.png" alt="logo" width="300" height="300"></Image>
         <div className="flex">
           <Label>Sort by ratings on</Label>
           <Input
             type="text"
-            defaultValue="amazon.com"
+            defaultValue={baseUrl}
             onChange={(e) => setBaseUrl(e.target.value)}
             className="focus:outline-none focus:border-none focus-visible:ring-orange-400"
           ></Input>
@@ -70,9 +67,6 @@ export default function Home() {
         ></Image>
         <div className="flex flex-col"></div>
       </div>
-      <footer>
-        Created with 🫕 by <Link href="https://willhausmarc.xyz">MW</Link>
-      </footer>
-    </main>
+    </div>
   );
 }
