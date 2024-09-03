@@ -8,7 +8,7 @@ import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-van
 import Link from "next/link";
 
 export default function Home() {
-  const [baseUrl, setBaseUrl] = useState("");
+  const [baseUrl, setBaseUrl] = useState("amazon.com");
   const [search, setSearch] = useState("");
   const router = useRouter();
 
